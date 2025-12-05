@@ -1,2 +1,4 @@
-# csd-340
-CSD-340
+# CSD 340 Web Development with HTML and CSS
+## Contributors
+  * Prof. Chandra Bobba
+  * Patrick Cupp
