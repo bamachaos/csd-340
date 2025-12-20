@@ -1,3 +1,23 @@
+#container {
+  background-color: blue;
+  color: white;
+  border: 2px solid black;
+  margin-top: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
+  padding: 20px;
+}
+
+#container1 {
+  background-color: white;
+  color: black;
+  border: none;
+  margin-top: 0px;
+  margin-right: 100px;
+  margin-left: 100px;
+  padding: 0px;
+}
+
 /* Center the main title */
 h1 {
   text-align: center;
@@ -59,5 +79,15 @@ ul {
 
 /* Link hover underline */
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
+<style>
+ul.a {list-style-type: circle;}
+ul.b {list-style-type: disc;}
+ul.c {list-style-type: square;}
+
+ol.d {list-style-type: upper-roman;}
+ol.e {list-style-type: lower-roman;}
+ol.f {list-style-type: lower-alpha;}
+ol.g {list-style-type: decimal;}
+</style>
