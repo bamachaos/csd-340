@@ -1,3 +1,18 @@
+.container {
+	width: 100%;
+}
+
+/* Container styling*/
+#container1 {
+	display:flex;
+	background-color: blue;
+	color: white;
+	border: 2px solid black;
+	margin-top: 50px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
 /* Center the main title */
 h1 {
   text-align: center;
@@ -13,10 +28,11 @@ h1 {
 .last-div {
   width: 100%;
   margin-top: 60%;
+  text-align: right;
 }
 
 /* Bottom div */
-.bottom-div {
+.bottom-div {		
   float: right;
   margin-bottom: 20px;
 }
@@ -53,92 +69,32 @@ ul {
 
 .unordered-list ul {
   padding: 10px;
-  list-style-type: upper-roman;
+  list-style-type: disk;
   list-style-position: inside;
 }
-
-/* Link hover underline */
+/* Link properties*/
+a:link {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: purple;
+  background-color: transparent;
+  text-decoration: none;
+}
 a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
   text-decoration: underline;
 }
 
-/* Container styling*/
-#container {
-	display:flex;
-	background-color: blue;
-	color: white;
-	border: 2px solid black;
-	margin-top: 50px;
-	margin-left: 100px;
-	margin-right: 100px;
-}
-
-/*<style>
-.mycontainer {
-  width: 100%;
-  overflow: auto;
-}
-div. mycontainer div {
-  width: 33%;
-  float: left;
-}
-</style>*/
-
-/*<style>
-
-div {
-  width:30%;  
-  display:inline-block;
-}
-</style>
-
-<style>
-.grid-container {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-}
-</style>
-
-
-.container {
-  display: flex;
-  flex-direction: row;
-  background-color: DodgerBlue;
-}
-
-.container div {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  font-size: 24px;
-}
-*/
-
-.container1 {
-  display: flex;
-  gap: 20px; /* Adds space between items */
-}
-.item {
-  flex: 1; /* Makes items take up equal width */
-}
-
-.warning {
-  border: 10px ridge red;
-  background-color: yellow;
-  padding: 0.5rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.warning img {
-  width: 100%;
-}
-
-.warning p {
-  font: small-caps bold 1.2rem sans-serif;
-  text-align: center;
-}
-
+/* Side by side boxes*/
 .box {
   border: 2px dotted rgb(96 139 168);
   display: flex;
@@ -146,8 +102,34 @@ div {
 }
 
 .box > * {
-  border: 2px solid rgb(96 139 168);
+  border: 2px solid red;
   border-radius: 5px;
   background-color: rgb(96 139 168 / 0.2);
+  width: 45%;
   padding: 1em;
 }
+
+.box1 {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box1 > * {
+  /*border: 2px solid red;
+  border-radius: 5px;
+  background-color: rgb(96 139 168 / 0.2);*/
+  width: 45%;
+  padding: 1em;
+}
+
+<style>
+ul.a {list-style-type: circle;}
+ul.b {list-style-type: disc;}
+ul.c {list-style-type: square;}
+
+ol.d {list-style-type: upper-roman;}
+ol.e {list-style-type: lower-roman;}
+ol.f {list-style-type: lower-alpha;}
+ol.g {list-style-type: decimal;}
+</style>
