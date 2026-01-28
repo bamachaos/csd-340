@@ -1,0 +1,172 @@
+.container1 {
+	width: 100%;
+}
+
+/* Container styling*/
+.container2 {
+	display:flex;
+	background-color: rgba(0,0,255,.25);
+	border: 1px solid black;
+	text-align: center;
+}
+
+/*.navbar {
+	display:flex;
+	background-color: white;
+	color: white;
+	border: 2px solid black;
+	justify-content: center;
+	text-align: center;
+	text-decoration: none;
+}*/
+
+/* Style the navigation menu */
+.navbar {
+  width: 100%;
+  background-color: rgba(0,0,255,.25);
+  border: 1px solid black;
+  overflow: auto;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+.container3 {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  column-gap: .5%;
+  background-color: blue;
+  padding: 10px;
+}
+
+.container3 div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 20px;
+  font-size: 30px;
+  justify-content: center;
+  text-align: center;
+  object-fit: cover;
+}
+
+/* Center the main title */
+h1 {
+  text-align: center;
+  background-color: rgba(0,0,255,.25);
+  border: 1px solid black;
+  font-weight: 400;
+}
+
+h2 {
+  text-align: right;
+  text
+  background-color: rgba(0,0,255,.25);
+}
+
+h3 {
+  text-align: center;
+  background-color: rgba(0,0,255,.25);
+}
+
+/* Last div styling */
+.last-div {
+  width: 100%;  
+  background-color: rgba(0,0,255,.25);
+  border: 1px solid black;
+  text-align: right;
+  padding: 10px;
+}
+
+
+
+img {
+	height: 250px;
+}
+
+figure {
+  /* Groups the image and caption as a single unit */
+  display: block; 
+  /* Centers the entire figure element if it is smaller than the container width */
+  margin: 0 auto; 
+  /* Optional: Adds a border around the entire figure */
+  border: none; 
+  /* Optional: Adds padding inside the figure */
+  padding: 4px; 
+}
+
+img {
+  /* Ensures the image is responsive and fits within the figure width */
+  max-width: 100%; 
+  /* Prevents extra space below the image, a common fix */
+  vertical-align: top; 
+}
+
+figcaption {
+  /* Centers the text within the caption area */
+  text-align: center; 
+  /* Optional: Styles the caption background and text */
+  background-color: rgba(0,0,255,0.25);
+  color: #333;
+  padding: 5px 0;
+  font-style: italic;
+  font-size: .75em;
+}
+
+/* Link properties*/
+a:link {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: purple;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+/* Ordered list and title */
+.ordered-list,
+.ordered-list h3 {
+  border: none;
+  border-radius: none;
+}
+
+.ordered-list ol {
+  padding: 10px;
+  list-style-position: inside;
+}
