@@ -10,21 +10,11 @@
 	text-align: center;
 }
 
-/*.navbar {
-	display:flex;
-	background-color: white;
-	color: white;
-	border: 2px solid black;
-	justify-content: center;
-	text-align: center;
-	text-decoration: none;
-}*/
-
 /* Style the navigation menu */
 .navbar {
   width: 100%;
   background-color: rgba(0,0,255,.25);
-  border: 1px solid black;
+  border-bottom: 15px solid black;
   overflow: auto;
 }
 
@@ -62,6 +52,7 @@ h1 {
   text-align: center;
   background-color: rgba(0,0,255,.25);
   border: 1px solid black;
+  color: white;
   font-weight: 400;
 }
 
@@ -76,48 +67,48 @@ h3 {
   background-color: rgba(0,0,255,.25);
 }
 
+/* Footer Styling */
+footer {
+    background-color: rgba(0,0,255,.25);
+	color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+	padding: 10px;
+	border: 1px solid black;
+}
+
+footer p {
+    color: white;
+    font-weight: 400;
+    float: right;
+    padding-right: 10px;
+    font-style: italic;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+	visited: white;
+}
+
+footer a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 /* Last div styling */
 .last-div {
-  width: 100%;  
+  /* width: 100%;  
   background-color: rgba(0,0,255,.25);
   border: 1px solid black;
   text-align: right;
-  padding: 10px;
-}
-
-
-
-img {
-	height: 250px;
-}
-
-figure {
-  /* Groups the image and caption as a single unit */
-  display: block; 
-  /* Centers the entire figure element if it is smaller than the container width */
-  margin: 0 auto; 
-  /* Optional: Adds a border around the entire figure */
-  border: none; 
-  /* Optional: Adds padding inside the figure */
-  padding: 4px; 
-}
-
-img {
-  /* Ensures the image is responsive and fits within the figure width */
-  max-width: 100%; 
-  /* Prevents extra space below the image, a common fix */
-  vertical-align: top; 
-}
-
-figcaption {
-  /* Centers the text within the caption area */
-  text-align: center; 
-  /* Optional: Styles the caption background and text */
-  background-color: rgba(0,0,255,0.25);
-  color: #333;
-  padding: 5px 0;
-  font-style: italic;
-  font-size: .75em;
+  padding: 10px;*/
 }
 
 /* Link properties*/
@@ -154,19 +145,45 @@ a:active {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+.card-title {
+	text-align: center;
+    font-size: 2em;
+    color: white;
+    font-weight: 400;
+}
+
+.card-content {
+	list-style-type: decimal;
+}
+
 /* Add some padding inside the card container */
 .container {
   padding: 2px 16px;
+  color: white;
 }
 
 /* Ordered list and title */
-.ordered-list,
-.ordered-list h3 {
+.card-content,
+.card-content h3 {
   border: none;
   border-radius: none;
 }
 
-.ordered-list ol {
-  padding: 10px;
-  list-style-position: inside;
+.card-content ol {
+  padding: 2px 16px;
+  list-style: decimal inside;
+  color: black;
 }
+
+
+<style>
+ul.a {list-style-type: circle;}
+ul.b {list-style-type: disc;}
+ul.c {list-style-type: square;}
+
+ol.d {list-style-type: upper-roman;}
+ol.e {list-style-type: lower-roman;}
+ol.f {list-style-type: lower-alpha;}
+ol.g {list-style-type: decimal;}
+</style>
+
