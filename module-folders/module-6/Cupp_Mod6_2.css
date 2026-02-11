@@ -57,8 +57,7 @@ h1 {
 }
 
 h2 {
-  text-align: right;
-  text
+  text-align: center;
   background-color: rgba(0,0,255,.25);
 }
 
@@ -164,7 +163,7 @@ a:active {
 
 /* Ordered list and title */
 .card-content,
-.card-content h3 {
+.card-content h2 {
   border: none;
   border-radius: none;
 }
